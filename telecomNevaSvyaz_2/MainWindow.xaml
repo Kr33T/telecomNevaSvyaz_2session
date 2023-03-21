@@ -84,15 +84,7 @@
 
                 </Frame>
                 <Grid Grid.Column="1" Background="#FFEAEAEA">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                        <RowDefinition Height="30"/>
-                    </Grid.RowDefinitions>
-                    <StackPanel x:Name="btnUp" Grid.Row="0" MouseUp="btnUp_MouseDown" Background="#FFEAEAEA">
-                        <Polyline Stroke="Black" Points="0, 15, 15, 5, 30, 15" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                    <ListView x:Name="lvEvents" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FFEAEAEA">
+                    <ListView x:Name="lvEvents" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#FFEAEAEA">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -106,9 +98,6 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <StackPanel Grid.Row="2" MouseDown="btnDown_MouseDown" Background="#FFEAEAEA">
-                        <Polyline x:Name="btnDown" Stroke="Black" Points="0, 15, 15, 25, 30, 15" HorizontalAlignment="Center"/>
-                    </StackPanel>
                 </Grid>
             </Grid>
         </Grid>
